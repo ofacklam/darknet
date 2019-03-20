@@ -1,8 +1,8 @@
 classes= 2
-train  = ../training/coco/trainvalno5k.txt
+train  = training/coco/trainvalno5k.txt
 #valid  = coco_testdev
-valid = ../training/coco/5k.txt
-names = ../training/coco.names
-backup = ../training/backup
+valid = training/coco/5k.txt
+names = training/coco.names
+backup = training/backup
 eval=coco
 
