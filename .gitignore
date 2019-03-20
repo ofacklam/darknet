@@ -18,6 +18,9 @@ submission/
 cfg/
 darknet
 .fuse*
+training/coco
+backup/
+*.conv.*
 
 # OS Generated #
 .DS_Store*
