@@ -21,7 +21,7 @@ darknet
 .fuse*
 training/coco
 backup/
-*.conv.*
+darknet53.conv.74
 
 # OS Generated #
 .DS_Store*
