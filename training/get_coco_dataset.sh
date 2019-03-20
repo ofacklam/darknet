@@ -35,3 +35,6 @@ cd ..
 
 # Download pre-trained weight
 wget https://pjreddie.com/media/files/yolov3-tiny.weights
+
+# Create backup folder
+mkdir backup
