@@ -29,3 +29,9 @@ unzip -q instances_train-val2014.zip
 paste <(awk "{print \"$PWD\"}" <5k.part) 5k.part | tr -d '\t' > 5k.txt
 paste <(awk "{print \"$PWD\"}" <trainvalno5k.part) trainvalno5k.part | tr -d '\t' > trainvalno5k.txt
 
+# Execute Python script for relabeling
+cd ..
+./change_labels.py
+
+# Download pre-trained weight
+wget https://pjreddie.com/media/files/yolov3-tiny.weights
