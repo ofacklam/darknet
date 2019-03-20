@@ -11,6 +11,7 @@ cd darknet/training
 cd ..
 make
 ```
+Si probleme de compilation, mettre a jour le path avec : `export PATH="/usr/local/cuda/bin:/usr/local/cuda/nvvm/bin:$PATH"`
 - Lancer le réentrainement avec
 ```
 ./darknet detector train cfg/new_coco.data cfg/yolov3-tiny_custom.cfg <path/to/last/backup>
