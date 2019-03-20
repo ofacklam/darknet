@@ -1,3 +1,23 @@
+# Réentrainement de YOLO
+
+- Cloner le repo : `git clone https://github.com/ofacklam/darknet`
+- Executer le script de téléchargement du dataset : 
+```
+cd darknet/training
+./get_coco_dataset.sh
+```
+- Compiler l'executable `darknet` avec :
+```
+cd ..
+make
+```
+- Lancer le réentrainement avec
+```
+./darknet detector train cfg/new_coco.data cfg/yolov3-tiny_custom.cfg <path/to/last/backup>
+```
+A priori le `<path/to/last/backup>` sera de la forme `training/backup/yolov3-tiny_custom.backup`. Pour commencer un nouveau réentrainement, on peut se contenter d'utiliser `training/yolov3-tiny.weights`
+
+
 ![Darknet Logo](http://pjreddie.com/media/files/darknet-black-small.png)
 
 # Darknet #
